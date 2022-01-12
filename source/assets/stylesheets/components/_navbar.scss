@@ -1,6 +1,9 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  background: $light-gray;
+  color: $violet;
+  padding: 16px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +12,35 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-name {
+  h2 {
+    font-family: 'Rock Salt';
+  }
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+}
+.tabs-underlined {
+  .tab-underlined {
+    color: $violet;
+    padding: 8px;
+    margin: 8px 16px;
+    opacity: .4;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    display: block;
+  }
+  .tab-underlined:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  .tab-underlined.active {
+    opacity: 1;
+    border-bottom: 4px solid $violet;
+  }
 }

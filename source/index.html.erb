@@ -1,8 +1,44 @@
+<div class="navbar-lewagon">
+  <div class="navbar-name p-2">
+    <h2>Matt</h2>
+  </div>
+  <div>
+    <ul class="nav tabs-underlined" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#creative" role="tab" aria-controls="home" aria-selected="true">Creative</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#requests" role="tab" aria-controls="profile" aria-selected="false">Product</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#converstions" role="tab" aria-controls="converstion" aria-selected="false">About</a>
+      </li>
+    </ul>
+  </div>
+</div>
 <div class="container mt-3">
   <div class="row justify-content-center">
     <div class="col">
-      <h1>Middleman Boilerplate</h1>
-      <p>Bootstrap and Font Awesome already installed.</p>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade py-3 show active" id="creative" role="tabpanel" aria-labelledby="home-tab">
+          <div class="cards">
+            <% data.products.each do |item| %>
+              <% if item.category == 'creative' %>
+                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(item.image) %>)">
+                  <div class="card-description">
+                    <p><%= item.name %></p>
+                  </div>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+        <div class="tab-pane fade py-3" id="requests" role="tabpanel" aria-labelledby="profile-tab">
+          This is the content for the Requests tab. Notice in the tab HTML there is a href="#requests". This is pointing to the id of this div.
+        </div>
+        <div class="tab-pane fade py-3" id="converstions" role="tabpanel" aria-labelledby="converstion-tab">
+          <p>Hi, my name is Matt Perchard and I'm a multi-disciplinary creative based in the UK.
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>

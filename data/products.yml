@@ -1,4 +1,26 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: Ultimate Worrier
+  image: ultimateworrier.png
+  category: creative
+
+
+- name: Zapped
+  image: zapped.png
+  category: creative
+
+- name: Me & EU
+  image: me&eu.png
+  category: creative
+
+
+- name: Chairs
+  image: chair.png
+  category: product
+
+- name: Lights
+  image: light.png
+  category:
+
+
+- name: Experiments
+  image: experiments.png
+  category: product
