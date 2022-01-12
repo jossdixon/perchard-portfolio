@@ -18,8 +18,7 @@
 
 - name: Lights
   image: light.png
-  category:
-
+  category: product
 
 - name: Experiments
   image: experiments.png
